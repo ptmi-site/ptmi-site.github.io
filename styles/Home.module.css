@@ -1,0 +1,310 @@
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0)
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    transform: translate3d(100px, 0, 0)
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+  }
+}
+@keyframes fadeInRight {
+  from {
+    transform: translate3d(-100px, 0, 0)
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+}
+.container {
+  padding: 0;
+}
+.header {
+  width: 100%;
+  height: 50px;
+  background: #08453E;
+  color: #DBF5EF;
+  display: flex;
+  justify-content: flex-end;
+}
+.header ul {
+  width: 60%;
+  margin:0;
+  padding:0;
+  display: flex;
+}
+.header ul li {
+  list-style: none;
+  min-width: 130px;
+  line-height: 50px;
+  text-align: center;
+}
+.header ul li a:hover {
+  text-decoration: underline;
+}
+.header ul li:not(:last-child):hover {
+  background: #0AAF88;
+  font-weight: bold;
+
+}
+.header ul li:last-child {
+  min-width: 380px;
+  display: flex;
+  align-items: center;
+}
+.search {
+  width: 90%;
+  height:33px;
+  background: #7E9390;
+  display: inline-block;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.search input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  color: #DBF5EF;
+}
+
+
+/* Full Banner */
+section.fullBanner {
+  padding: 1% 10%;
+  height: 922px;
+  background: #f8f8f8;
+  display: flex;
+}
+section.fullBanner h1 {
+  font-size: 70px;
+  margin: 5% 0 0 0;
+  padding: 0;
+  line-height: 0.9;
+  color: #0AAF88;
+}
+section.fullBanner h1 span {
+  color:
+  #297C69;
+}
+section.fullBanner > div {
+  width: 50%;
+  height: 100%;
+}
+section.fullBanner>div:first-child {
+  width: 65%;
+  padding-left: 10%;
+}
+section.fullBanner .textDestak {
+  height: 50%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  opacity: 0;
+  animation-name: fadeInUp;
+}
+
+section.fullBanner .doctor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.fullBanner .doctorImage1 {
+  margin-bottom: 10%;
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  animation-duration: 1.1s;
+  animation-fill-mode: both;
+  opacity: 0;
+  animation-name: fadeInLeft;
+}
+section.fullBanner .doctorImage2 {
+  margin-bottom: 10%;
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+    animation-duration: 1.2s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInRight;
+}
+section.fullBanner .textDestak p {
+  width: 80%;
+}
+section.fullBanner .textDestak > div a:first-child {
+margin-right: 5%;
+}
+.btn {
+  width:226px;
+  height: 70px;
+  background: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 25px;
+}
+.btn-fill {
+  background-color: #0AAF88;
+  color: #fff;
+}
+.btn-fill:hover {
+  background-color: #12EDB9;
+}
+.btn-stroke {
+  border: solid 2px #0AAF88;
+  color: #0AAF88;
+}
+.btn-stroke:hover {
+  border: solid 2px #12EDB9;
+  color: #12EDB9;
+}
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
